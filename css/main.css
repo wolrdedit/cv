@@ -2,6 +2,11 @@
  * Globals
  */
 
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
 /* Links */
 a,
 a:focus,
@@ -9,106 +14,211 @@ a:hover {
     color: #fff;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-    color: #333;
-    text-shadow: none; /* Prevent inheritance from `body` */
-    background-color: #fff;
-    border: .05rem solid #fff;
-}
-
-
 /*
  * Base structure
  */
 
 html,
 body {
+    padding: 0;
+    margin: 0;
     font-family: Libre Franklin, sans-serif;
     font-style: normal;
 }
 
-body {
-    display: -ms-flexbox;
-    display: flex;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+/* Container */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 93px 0;
 }
 
-.cover-container {
-    max-width: 42em;
+/* Brand */
+.brand {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: none;
 }
 
+/* Nav */
+.nav {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav__list {
+    list-style-type: none;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+/* Intro */
+.intro {
+}
+
+.intro__title {
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+}
+
+.intro__text {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.intro__sub-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: underline;
+}
+
+/* Section */
+.section {
+    padding-top: 89px;
+}
+
+/* Text title */
+.text-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 75px;
+}
+
+.text-sub-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Text block */
+.text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+}
 
 /*
  * Header
  */
-.masthead {
+.header {
     color: #fff;
     height: 100vh;
-    margin-bottom: 2rem;
+    background: rgba(198, 108, 73, 0.3);
 }
 
-.masthead-bg {
+.header::before {
+    content: '';
     position: absolute;
-    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
     background: #F5D6AB url(../images/b2a75cd5349656b37f5cc91d5c89d6a2.jpg) center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    z-index: -1;
 }
 
-.masthead-brand {
-    margin-bottom: 0;
+.header .inner,
+.skills .inner,
+.portfolio .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.nav-masthead .nav-link {
-    padding: .25rem 0;
-    font-weight: 700;
-    color: rgba(255, 255, 255, .5);
-    background-color: transparent;
-    border-bottom: .25rem solid transparent;
+.skills .inner {
+    align-items: center;
 }
 
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-    border-bottom-color: rgba(255, 255, 255, .25);
+.portfolio .inner {
+    margin-top: 48px;
 }
 
-.nav-masthead .nav-link + .nav-link {
-    margin-left: 1rem;
+.header__list {
+    display: flex;
 }
 
-.nav-masthead .active {
-    color: #fff;
-    border-bottom-color: #fff;
+
+.header__item {
+    padding: 0 30px;
 }
 
-@media (min-width: 48em) {
-    .masthead-brand {
-        float: left;
+.header__intro {
+    padding-top: 145px;
+}
+
+.header__intro-text {
+    margin: 26px 0 106px;
+}
+
+/* about */
+.about {
+}
+
+.about__title {
+
+}
+
+/* Skills */
+.skills {
+    background: #FFFAF2;
+}
+
+.skills__photo {
+    width: 350px;
+    height: 340px;
+    background: #F5D6AB url(../images/ebb0d75a42a7ada9994cf2df460dcd3a.jpg) center;
+    background-size: cover;
+}
+
+.skills__list td,
+.skills__list th {
+    min-width: 190px;
+    text-align: left;
+}
+
+/* Portfolio */
+.portfolio {
+
+}
+
+.portfolio__text {
+    width: 349px;
+    height: 137px;
+}
+
+@media (max-width: 576px) {
+    /*.masthead-brand {
+        flex: 1;
+        margin-right: 40px;
+    }*/
+    .container {
+        width: 100%;
     }
 
-    .nav-masthead {
-        float: right;
+    .header {
+        height: 275px;
+    }
+
+    .header::before {
+        height: 275px;
     }
 }
 
-
-/*
- * Cover
- */
-.cover {
-    padding: 0 1.5rem;
+@media (min-width: 576px) {
+    /*.masthead-links {
+        flex-grow: 0;
+    }*/
 }
-
-.cover .btn-lg {
-    padding: .75rem 1.25rem;
-    font-weight: 700;
-}
-
 
 /*
  * Footer

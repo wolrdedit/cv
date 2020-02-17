@@ -7,44 +7,134 @@
     <meta name="author" content="wolrdedit">
     <title>Portofolio</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/cover/">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body class="text-center">
-<div class="masthead-bg"></div>
-<div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
-    <header class="masthead">
-        <div class="inner pt-5">
-            <h3 class="masthead-brand">Portofolio</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link" href="#">Home</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Skills</a>
-                <a class="nav-link" href="#">Portfolio</a>
-                <a class="nav-link" href="#">Contact</a>
-            </nav>
+<body>
+<div class="">
+    <header class="header">
+        <div class="container">
+            <div class="inner">
+                <a class="brand" href="#">Portofolio</a>
+                <nav class="nav header__nav">
+                    <ul class="nav__list header__list">
+                        <li class="nav__item header__item">
+                            <a class="nav__link" href="#">Home</a>
+                        </li>
+                        <li class="nav__item header__item">
+                            <a class="nav__link" href="#">About</a>
+                        </li>
+                        <li class="nav__item header__item">
+                            <a class="nav__link" href="#">Skills</a>
+                        </li>
+                        <li class="nav__item header__item">
+                            <a class="nav__link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav__item header__item">
+                            <a class="nav__link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="intro header__intro">
+                <H1 class="intro__title">
+                    Hi, It’s Théophile Seyrig
+                </H1>
+                <div class="intro__text header__intro-text">
+                    Designer from Porto, Portugal
+                </div>
+                <div class="intro__sub-text">
+                    Latest works
+                </div>
+            </div>
         </div>
     </header>
 
-    <main role="main" class="inner cover">
-        <h1 class="cover-heading">Cover your page.</h1>
-        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the
-            text, and add your own fullscreen background photo to make it your own.</p>
-        <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
+    <main role="main">
+        <section class="container section about">
+            <h2 class="text-title about__title">About</h2>
+            <div class="text about__text-first">
+                Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt.
+                Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed
+                purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas
+                aliquet mollis.
+            </div>
+            <br>
+            <div class="text about__text-second">
+                Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum
+                augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas
+                porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in
+                rutrum augue. Pellentesque.
+            </div>
+        </section>
+        <section class="section skills">
+            <div class="container">
+                <h2 class="text-title skills__title">About</h2>
+                <div class="inner">
+                    <img class="skills__photo">
+                    <div class="skills__list">
+                        <table class="">
+                            <thead>
+                            <tr>
+                                <th>Profile</th>
+                                <th>UI / UX Engineer, Front-end Developer</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>UX Research</td>
+                                <td>-----------</td>
+                            </tr>
+                            <tr>
+                                <td>Tools</td>
+                                <td>Paper, Pen, Balsamiq</td>
+                            </tr>
+                            <tr>
+                                <td>UI Design</td>
+                                <td>-----------</td>
+                            </tr>
+                            <tr>
+                                <td>Tools</td>
+                                <td>Adobe PS, AI, XD, Figma, InVision</td>
+                            </tr>
+                            <tr>
+                                <td>Front-end Dev</td>
+                                <td>-----------</td>
+                            </tr>
+                            <tr>
+                                <td>Tools</td>
+                                <td>HTML, CSS, JS, Bootstrap, React</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section container portfolio">
+            <div class="">
+                <h2 class="text-title">Portfolio</h2>
+                <h3 class="text-sub-title">UX Research</h3>
+                <div class="inner">
+                    <div class="text portfolio__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam
+                        massa semper a tincidunt cursus ultricies lectus eget urna.
+                    </div>
+                    <div class="portfolio__photos">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <footer class="mastfoot">
-        <div class="inner">
+    <!--<footer class="container-sm mastfoot">
+        <div class="container">
             <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
                     href="https://twitter.com/mdo">@mdo</a>.</p>
         </div>
-    </footer>
+    </footer>-->
 </div>
 </body>
 </html>
