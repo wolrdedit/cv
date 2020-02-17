@@ -196,6 +196,13 @@ body {
     height: 137px;
 }
 
+/*
+ * Footer
+ */
+.footer {
+    background: #FFFAF2;
+}
+
 @media (max-width: 576px) {
     /*.masthead-brand {
         flex: 1;
@@ -218,11 +225,4 @@ body {
     /*.masthead-links {
         flex-grow: 0;
     }*/
-}
-
-/*
- * Footer
- */
-.mastfoot {
-    color: rgba(255, 255, 255, .5);
 }
