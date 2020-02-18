@@ -106,6 +106,10 @@ body {
     text-align: justify;
 }
 
+.table {
+
+}
+
 /*
  * Header
  */
@@ -182,8 +186,32 @@ body {
 
 .skills__list td,
 .skills__list th {
-    min-width: 190px;
     text-align: left;
+}
+
+.skills__table {
+}
+
+.skills__table th {
+    padding: 30px 0;
+}
+
+.skills__table td {
+    padding: 10px 0;
+}
+
+.skills__name {
+    min-width: 190px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.skills__value {
+    min-width: 446px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 /* Portfolio */
