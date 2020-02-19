@@ -29,8 +29,7 @@ progress::-webkit-progress-bar {
     background-color: #F5D6AB;
 }
 
-progress::-webkit-progress-value
-{
+progress::-webkit-progress-value {
     background: #C66C49;
 }
 
@@ -158,16 +157,21 @@ body {
     z-index: -1;
 }
 
-.header .inner{
-    padding-top: 93px;
-}
-
 .header .inner,
 .skills .inner,
-.portfolio .inner {
+.portfolio .inner,
+.footer .inner {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+}
+
+.header .inner {
+    padding-top: 93px;
+}
+
+.footer .inner {
+    align-items: normal;
 }
 
 .skills .inner {
@@ -255,11 +259,37 @@ body {
     height: 137px;
 }
 
+.portfolio  {
+
+}
+
 /*
  * Footer
  */
 .footer {
     background: #FFFAF2;
+}
+
+.footer .inner {
+
+}
+
+.footer__table td {
+    padding: 0 300px 20px 0;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer__email,
+.footer__phone {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.footer__email {
+    margin-bottom: 14px;
 }
 
 @media (max-width: 576px) {
