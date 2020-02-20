@@ -59,6 +59,13 @@ body {
     /*padding: 93px 0;*/
 }
 
+/* Inner */
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
 /* Brand */
 .brand {
     font-weight: bold;
@@ -157,29 +164,8 @@ body {
     z-index: -1;
 }
 
-.header .inner,
-.skills .inner,
-.portfolio .inner,
-.footer .inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
 .header .inner {
     padding-top: 93px;
-}
-
-.footer .inner {
-    align-items: normal;
-}
-
-.skills .inner {
-    align-items: center;
-}
-
-.portfolio .inner {
-    margin-top: 48px;
 }
 
 .header__list {
@@ -210,6 +196,10 @@ body {
 /* Skills */
 .skills {
     background: #FFFAF2;
+}
+
+.skills .inner {
+    align-items: center;
 }
 
 .skills__photo {
@@ -254,13 +244,20 @@ body {
 
 }
 
+.portfolio .inner {
+    margin-top: 48px;
+    align-items: normal;
+}
+
 .portfolio__text {
     width: 349px;
     height: 137px;
 }
 
-.portfolio  {
-
+.portfolio__photos {
+    display: flex;
+    justify-content: center;
+    width: 635px;
 }
 
 /*
@@ -271,7 +268,7 @@ body {
 }
 
 .footer .inner {
-
+    align-items: normal;
 }
 
 .footer__table td {
